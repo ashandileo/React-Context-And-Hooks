@@ -15,11 +15,18 @@ ul {
   padding: .5em 0;
 }
 
+nav {
+  padding: 10px;
+}
+
 nav li {
   display: inline-block;
   margin: 0 10px;
 }
 
 .book-list li {
-  margin: 10px 0;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+  border-radius: 12px;
 }
