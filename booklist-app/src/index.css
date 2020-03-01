@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  background: cornsilk;
+}
+
+.App {
+  background: floralwhite;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  padding: 10px 20px;
+  text-align: center;
+  background: cadetblue;
+  color: white;
+  border-radius: 12px;
+}
+
+.book-list {
+  padding: 1em 2em;
+}
+
+.empty {
+  padding: 1em;
+}
+
+.book-list ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+  background-color: #eee;
+  padding: 1em;
+  border-radius: 12px;
+  transition: .3s;
+}
+
+.book-list ul li:hover {
+  background-color: cornsilk
+}
+
+button {
+  border: none;
+  background-color: cadetblue;
+  padding: 0.5em 1em;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .3s;
+  outline: none;
+}
+
+button:hover {
+  background: rgb(77, 128, 129);
+}
+
+form {
+  padding: 1em;
+}
+
+input:first-child {
+  margin-bottom: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 6px;
+}
+
+form button {
+  margin: 1em auto 0;
+  display: block;
+}
