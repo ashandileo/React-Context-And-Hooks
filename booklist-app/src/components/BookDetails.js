@@ -3,7 +3,7 @@ import { BookContext } from '../contexts/BookContext'
 
 const BookDetails = ( { book } )  => {
 
-    const { removeBook } = useContext(BookContext)
+    const { dispatch } = useContext(BookContext)
 
     return (
         <li>
@@ -12,10 +12,10 @@ const BookDetails = ( { book } )  => {
                 <div className="author">{ book.author }</div>
             </div>
             <div>
-                <button onClick={ () => removeBook(book.id) }>Delete</button>
+                <button onClick={ () => dispatch({ type: 'REMOVE_BOOK', id: book.id }) }>Delete</button>
             </div>
         </li>
-    )
+    ) 
 
 }
 
